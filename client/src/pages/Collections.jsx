@@ -5,7 +5,7 @@ import CollectionCard from '../components/CollectionCard';
 import SectionHeading from '../components/SectionHeading';
 
 export default function Collections() {
-  /*const { content } = useSite();
+  const { content } = useSite();
   return (
     <>
       <section className="page-hero page-hero--collections">
@@ -37,5 +37,5 @@ export default function Collections() {
         </div>
       </section>
     </>
-  );*/
+  );
 } 

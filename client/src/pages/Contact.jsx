@@ -4,7 +4,7 @@ import QuoteForm from '../components/QuoteForm';
 import AppointmentForm from '../components/AppointmentForm';
 
 export default function Contact() {
- /* const { content } = useSite();
+  const { content } = useSite();
   const { contact } = content;
   return (
     <>
@@ -34,5 +34,5 @@ export default function Contact() {
         </div>
       </section>
     </>
-  );*/
+  );
 }

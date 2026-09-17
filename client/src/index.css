@@ -416,3 +416,1168 @@ p { line-height: 1.7; color: #58636a; }
   .collection-delete { grid-column: auto; justify-self: start; }
   .admin-panel { padding: 17px; }
 }
+
+.button--cream {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 28px;
+}
+
+.button--cream svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   PREMIUM OMICHEF B2B HERO
+========================================================= */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  color: #173347;
+}
+
+
+/* =========================================================
+   REMOVE ALL OLD HERO EFFECTS
+========================================================= */
+
+.hero::before,
+.hero::after,
+.hero-inner::before,
+.hero-inner::after,
+.hero-copy::before,
+.hero-copy::after,
+.hero-visual::before,
+.hero-visual::after,
+.hero-image-wrap::before,
+.hero-image-wrap::after {
+  content: none !important;
+
+  display: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  background: none !important;
+
+  box-shadow: none !important;
+
+  border: none !important;
+}
+
+
+/* =========================================================
+   HERO INNER
+========================================================= */
+
+.hero-inner {
+  position: relative;
+
+  width: 100%;
+  max-width: 1760px;
+
+  margin: 0 auto;
+
+  padding: 42px 64px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.88fr)
+    minmax(520px, 1.12fr);
+
+  align-items: center;
+
+  gap: clamp(55px, 5vw, 95px);
+
+  height: auto !important;
+
+  min-height: 0 !important;
+
+  max-height: none !important;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.hero-copy {
+  position: relative;
+
+  width: 100%;
+  max-width: 690px;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  height: auto !important;
+
+  min-height: 0 !important;
+
+  max-height: none !important;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  justify-content: flex-start !important;
+
+  align-items: flex-start !important;
+
+  gap: 0 !important;
+
+  row-gap: 0 !important;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.hero-eyebrow {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 17px !important;
+
+  padding: 0 !important;
+
+  font-size: 13px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 0.19em;
+
+  text-transform: uppercase;
+
+  color: #b64017;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.hero-title,
+.hero h1 {
+  display: block;
+
+  width: 100%;
+  max-width: 680px;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  height: auto !important;
+
+  min-height: 0 !important;
+
+  max-height: none !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(50px, 3.7vw, 70px);
+
+  line-height: 0.98;
+
+  font-weight: 500;
+
+  letter-spacing: -0.045em;
+
+  color: #173347;
+}
+
+
+/* =========================================================
+   REMOVE OLD DESCRIPTION COMPLETELY
+========================================================= */
+
+.hero-description {
+  display: none !important;
+
+  visibility: hidden !important;
+
+  width: 0 !important;
+
+  height: 0 !important;
+
+  min-width: 0 !important;
+
+  min-height: 0 !important;
+
+  max-width: 0 !important;
+
+  max-height: 0 !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  flex: none !important;
+}
+
+
+/* =========================================================
+   BENEFIT STRIP
+========================================================= */
+
+.hero-benefits {
+  width: fit-content;
+
+  margin: 24px 0 0 !important;
+
+  padding: 11px 16px;
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  justify-content: flex-start !important;
+
+  gap: 0 !important;
+
+  flex-grow: 0 !important;
+
+  flex-shrink: 0 !important;
+
+  background: #faf7f4;
+
+  border: 1px solid #eadfd6;
+
+  border-radius: 11px;
+}
+
+
+.hero-benefits span {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  margin: 0 !important;
+
+  padding: 0 15px;
+
+  white-space: nowrap;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  color: #714332;
+}
+
+
+.hero-benefits span:first-child {
+  padding-left: 0;
+}
+
+
+.hero-benefits span:last-child {
+  padding-right: 0;
+}
+
+
+.hero-benefits span:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+  top: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+
+  background: #b64017;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.hero-actions {
+  width: 100%;
+
+  margin: 18px 0 0 !important;
+
+  padding: 0 !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: flex-start !important;
+
+  flex-wrap: wrap !important;
+
+  gap: 13px !important;
+
+  flex-grow: 0 !important;
+
+  flex-shrink: 0 !important;
+}
+
+
+/* =========================================================
+   BUTTON BASE
+========================================================= */
+
+.hero-button {
+  min-height: 54px;
+
+  padding: 0 29px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* PRIMARY BUTTON */
+
+.hero-button--primary {
+  color: #ffffff;
+
+  background: #17384b;
+
+  border: 1px solid #17384b;
+
+  box-shadow:
+    0 8px 20px rgba(23, 56, 75, 0.12);
+}
+
+
+.hero-button--primary:hover {
+  background: #214a60;
+
+  border-color: #214a60;
+}
+
+
+/* SECONDARY BUTTON */
+
+.hero-button--secondary {
+  color: #173347;
+
+  background: #ffffff;
+
+  border: 1px solid #cbd4d9;
+}
+
+
+.hero-button--secondary:hover {
+  background: #f7f9fa;
+
+  border-color: #173347;
+}
+
+
+/* =========================================================
+   TRUST LINE
+========================================================= */
+
+.hero-trust {
+  width: 100%;
+
+  margin: 18px 0 0 !important;
+
+  padding: 0 !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: flex-start !important;
+
+  gap: 9px;
+
+  flex-grow: 0 !important;
+
+  flex-shrink: 0 !important;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+
+  color: #697984;
+}
+
+
+.hero-trust svg {
+  flex: 0 0 auto;
+
+  color: #b64017;
+}
+
+
+/* =========================================================
+   RIGHT VISUAL
+========================================================= */
+
+.hero-visual {
+  position: relative;
+
+  width: 100%;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  height: auto !important;
+
+  min-height: 0 !important;
+
+  max-height: none !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: flex-end !important;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   IMAGE WRAPPER
+========================================================= */
+
+.hero-image-wrap {
+  position: relative;
+
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 0 0 auto !important;
+
+  padding: 0 !important;
+
+  height: auto !important;
+
+  min-height: 0 !important;
+
+  max-height: none !important;
+
+  overflow: hidden;
+
+  border-radius: 26px;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.hero-image-wrap img {
+  display: block;
+
+  width: 100%;
+
+  height: clamp(390px, 29vw, 485px);
+
+  margin: 0;
+
+  padding: 0;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border-radius: 26px;
+
+  background: transparent;
+
+  box-shadow:
+    0 18px 50px rgba(23, 51, 71, 0.09);
+}
+
+
+/* =========================================================
+   REMOVE ANY OLD FLOATING CARDS
+========================================================= */
+
+.hero-float,
+.hero-float--top,
+.hero-float--bottom,
+.hero-float-icon {
+  display: none !important;
+
+  visibility: hidden !important;
+
+  width: 0 !important;
+
+  height: 0 !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+}
+
+
+/* =========================================================
+   FORCE CONTENT TO STAY COMPACT
+   IMPORTANT FOR REMOVING LARGE GAP
+========================================================= */
+
+.hero .hero-copy > * {
+  flex-grow: 0 !important;
+
+  flex-shrink: 0 !important;
+}
+
+
+.hero .hero-title + .hero-benefits,
+.hero .hero-copy h1 + .hero-benefits {
+  margin-top: 24px !important;
+}
+
+
+.hero .hero-benefits + .hero-actions {
+  margin-top: 18px !important;
+}
+
+
+.hero .hero-actions + .hero-trust {
+  margin-top: 18px !important;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1700px) {
+
+  .hero-inner {
+    max-width: 1760px;
+
+    padding:
+      46px
+      72px;
+  }
+
+
+  .hero-image-wrap {
+    max-width: 820px;
+  }
+
+
+  .hero-image-wrap img {
+    height: 495px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1300px) {
+
+  .hero-inner {
+    padding:
+      38px
+      42px;
+
+    grid-template-columns:
+      minmax(0, 0.92fr)
+      minmax(450px, 1.08fr);
+
+    gap: 48px;
+  }
+
+
+  .hero-title,
+  .hero h1 {
+    font-size: clamp(46px, 4.8vw, 62px);
+  }
+
+
+  .hero-image-wrap img {
+    height: 410px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+
+    padding:
+      38px
+      28px;
+
+    gap: 34px;
+  }
+
+
+  .hero-copy {
+    max-width: 760px;
+  }
+
+
+  .hero-title,
+  .hero h1 {
+    max-width: 720px;
+
+    font-size: clamp(43px, 8vw, 60px);
+  }
+
+
+  .hero-benefits {
+    margin-top: 22px !important;
+  }
+
+
+  .hero-image-wrap {
+    max-width: 760px;
+
+    margin: 0 auto !important;
+  }
+
+
+  .hero-image-wrap img {
+    height: 420px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+  .hero-inner {
+    padding:
+      30px
+      18px;
+
+    gap: 27px;
+  }
+
+
+  .hero-eyebrow {
+    margin-bottom: 13px !important;
+
+    font-size: 11px;
+
+    letter-spacing: 0.15em;
+  }
+
+
+  .hero-title,
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 49px);
+
+    line-height: 1;
+  }
+
+
+  .hero-benefits {
+    width: 100%;
+
+    margin-top: 20px !important;
+
+    padding: 12px 13px;
+
+    display: flex !important;
+
+    flex-wrap: wrap;
+
+    gap: 7px 14px !important;
+  }
+
+
+  .hero-benefits span {
+    padding: 0;
+
+    font-size: 12.5px;
+  }
+
+
+  .hero-benefits span:not(:last-child)::after {
+    display: none;
+  }
+
+
+  .hero-actions {
+    margin-top: 16px !important;
+
+    flex-direction: column;
+
+    align-items: stretch !important;
+
+    gap: 10px !important;
+  }
+
+
+  .hero-button {
+    width: 100%;
+
+    min-height: 52px;
+  }
+
+
+  .hero-trust {
+    margin-top: 15px !important;
+
+    align-items: flex-start !important;
+  }
+
+
+  .hero-image-wrap {
+    width: 100%;
+
+    border-radius: 20px;
+  }
+
+
+  .hero-image-wrap img {
+    height: 295px;
+
+    border-radius: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .hero-inner {
+    padding:
+      26px
+      16px;
+  }
+
+
+  .hero-title,
+  .hero h1 {
+    font-size: 38px;
+  }
+
+
+  .hero-image-wrap img {
+    height: 265px;
+  }
+
+}
+
+/* Contact Hero - Mobile Optimization */
+@media (max-width: 768px) {
+  .page-hero--contact {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+
+  .contact-hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .contact-hero-grid h1 {
+    font-size: 42px;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin: 14px 0 22px;
+  }
+
+  .contact-hero-grid p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .eyebrow--light {
+    font-size: 13px;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+
+/* Smaller mobile screens */
+@media (max-width: 480px) {
+  .page-hero--contact {
+    padding-top: 75px;
+    padding-bottom: 25px;
+  }
+
+  .contact-hero-grid {
+    gap: 24px;
+  }
+
+  .contact-hero-grid h1 {
+    font-size: 34px;
+    line-height: 1.08;
+    letter-spacing: -0.7px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .contact-hero-grid p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .eyebrow--light {
+    font-size: 12px;
+    letter-spacing: 1.3px;
+  }
+
+  .contact-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* Full width section */
+  .process-section {
+    width: 100%;
+    padding: 20px 10px 30px;
+  }
+
+  .process-section .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Reduce space above heading */
+  .process-section .section-heading {
+    margin-bottom: 18px;
+    padding: 0 5px;
+  }
+
+  /* Keep heading in 2 lines */
+  .process-section .section-heading h2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 auto;
+  }
+
+  .process-section .eyebrow {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  /* 2 boxes in one row */
+  .process-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  /* Mobile cards */
+  .process-grid article {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 13px;
+    border: 1px solid rgba(20, 55, 80, 0.12);
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  /* Number */
+  .process-grid article strong {
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 9px;
+  }
+
+  /* Card heading */
+  .process-grid article h3 {
+    font-size: 15px;
+    line-height: 1.25;
+    margin: 0 0 7px;
+  }
+
+  /* Card text */
+  .process-grid article p {
+    font-size: 12px;
+    line-height: 1.45;
+    margin: 0;
+  }
+
+}
+
+@media (min-width: 601px) {
+
+  /* Reduce top space of section */
+  .process-section {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  /* Reduce space below heading */
+  .process-section .section-heading {
+    margin-bottom: 25px;
+  }
+
+  /* Smaller heading + 2 line width */
+  .process-section .section-heading h2 {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  /* Smaller eyebrow */
+  .process-section .section-heading .eyebrow {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+}
+
+.page-hero--contact .contact-card a,
+.page-hero--contact .contact-card p,
+.page-hero--contact .contact-card span,
+.page-hero--contact .contact-card small {
+  color: #000 !important;
+}
+
+/* ================================
+   ABOUT HERO
+================================ */
+
+.page-hero--about {
+  background: #a7431d;
+  padding: 28px 0 55px;
+}
+
+.page-hero--about .page-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(420px, 0.75fr);
+  align-items: center;
+  gap: 55px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Left content */
+.page-hero--about .page-hero__grid > div {
+  width: 100%;
+}
+
+.page-hero--about .eyebrow {
+  margin-bottom: 22px;
+}
+
+.page-hero--about h1 {
+  margin: 0;
+  max-width: 850px;
+  font-size: clamp(52px, 4.2vw, 70px);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+/* Description */
+.page-hero--about p {
+  max-width: 820px;
+  margin: 48px 0 0;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* Image */
+.page-hero--about img {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1100px) {
+
+  .page-hero--about {
+    padding: 25px 0 45px;
+  }
+
+  .page-hero--about .page-hero__grid {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 35px;
+  }
+
+  .page-hero--about h1 {
+    font-size: clamp(48px, 5vw, 62px);
+  }
+
+  .page-hero--about p {
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+
+  .page-hero--about img {
+    height: 450px;
+    border-radius: 26px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+  .page-hero--about {
+    padding: 22px 0 35px;
+  }
+
+  .page-hero--about .page-hero__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  .page-hero--about .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .page-hero--about h1 {
+    max-width: 100%;
+    font-size: clamp(42px, 11vw, 52px);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+  }
+
+  .page-hero--about p {
+    max-width: 100%;
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .page-hero--about img {
+    width: 100%;
+    height: 330px;
+    border-radius: 22px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .page-hero--about {
+    padding: 18px 0 30px;
+  }
+
+  .page-hero--about .page-hero__grid {
+    gap: 25px;
+  }
+
+  .page-hero--about h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .page-hero--about p {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .page-hero--about img {
+    height: 280px;
+    border-radius: 18px;
+  }
+}

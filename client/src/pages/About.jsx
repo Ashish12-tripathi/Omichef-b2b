@@ -4,7 +4,7 @@ import { useSite } from '../context/SiteContext';
 import SectionHeading from '../components/SectionHeading';
 
 export default function About() {
-  /*const { content } = useSite();
+  const { content } = useSite();
   return (
     <>
       <section className="page-hero page-hero--about">
@@ -31,5 +31,5 @@ export default function About() {
         </div>
       </section>
     </>
-  );*/
+  );
 }
